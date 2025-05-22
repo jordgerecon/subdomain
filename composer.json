@@ -1,0 +1,7 @@
+{
+  "name": "yourname/craft-project",
+  "type": "project",
+  "require": {
+    "craftcms/cms": "^4.0.0"
+  }
+}
