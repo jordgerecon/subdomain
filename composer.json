@@ -1,7 +1,23 @@
 {
-  "name": "yourname/craft-project",
+  "name": "hotsauce.hotjar.com/craftcms-project",
+  "description": "A Craft CMS 4 project",
   "type": "project",
   "require": {
-    "craftcms/cms": "^4.0.0"
-  }
+    "craftcms/cms": "^4.5",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.1.0"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "@php craft setup/welcome"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
